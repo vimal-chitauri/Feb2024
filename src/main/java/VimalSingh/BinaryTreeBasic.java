@@ -25,6 +25,12 @@ public class BinaryTreeBasic {
 
         System.out.println("Size of a Tree");
         System.out.println(sizeOfBinaryTree(node));
+
+        System.out.println("Maximum node in a tree");
+        System.out.println(getMax(node));
+
+        System.out.println("height of a tree");
+        System.out.println(getHeight(node));
     }
     public static void inorderTraversal (BinaryNode root){
 
@@ -56,6 +62,26 @@ public class BinaryTreeBasic {
             return 0;
         }
         return 1+sizeOfBinaryTree(root.left)+sizeOfBinaryTree(root.right);
+    }
+
+    static int getMax(BinaryNode root){
+
+        if(root==null)
+            return 0;
+
+        return Math.max(root.key, Math.max(getMax(root.left),getMax(root.right)));
+    }
+
+    static int getHeight(BinaryNode root){
+        if(root==null)
+            return 0;
+        /*if(root.left!=null){
+            System.out.println(root.left.key);
+        }
+        if(root.right !=null){
+            System.out.println(root.right.key);
+        }*/
+        return 1+ Math.max(getHeight(root.left),getHeight(root.right));
     }
 
 }
