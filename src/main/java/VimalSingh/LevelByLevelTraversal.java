@@ -10,16 +10,8 @@ Geeks for Geeks Question from Lecture
 public class LevelByLevelTraversal {
 
     public static void main(String[] args) {
-        BinaryNode node = new BinaryNode(10);
-        //left tree structure
-        node.left = new BinaryNode(20);
-        node.left.left= new BinaryNode(40);
-        node.left.right= new BinaryNode(50);
-        node.left.right.left= new BinaryNode(70);
-        node.left.right.right = new BinaryNode(80);
-        //right tree structure
-        node.right = new BinaryNode(30);
-        node.right.right= new BinaryNode(60);
+        TreeStructure treeStructure = new TreeStructure();
+        BinaryNode node=treeStructure.treeStructure();
 
         levelByLevelTraversalMethod1(node);
         System.out.println("method 2");
