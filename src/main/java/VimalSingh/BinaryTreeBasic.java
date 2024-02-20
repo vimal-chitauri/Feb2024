@@ -64,7 +64,7 @@ public class BinaryTreeBasic {
         return Math.max(root.key, Math.max(getMax(root.left),getMax(root.right)));
     }
 
-    static int getHeight(BinaryNode root){
+    public static int getHeight(BinaryNode root){
         if(root==null)
             return 0;
         /*if(root.left!=null){

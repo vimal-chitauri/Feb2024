@@ -12,7 +12,8 @@ public class ConvertBinaryTreeInToDLL {
     public static void main(String[] args) {
         TreeStructure treeStructure = new TreeStructure();
         BinaryNode node = treeStructure.treeStructure();
-        convertInToDLL(node);
+        BinaryNode nodde = convertInToDLL(node);
+        System.out.println(nodde.left);
     }
 
     public static BinaryNode prev = null;
@@ -21,7 +22,7 @@ public class ConvertBinaryTreeInToDLL {
 
     public static BinaryNode convertInToDLL(BinaryNode root) {
         if (root == null) return null;
-        head = convertInToDLL(root.left);
+        convertInToDLL(root.left);
         if (prev == null) {
             head = root;
         } else {
