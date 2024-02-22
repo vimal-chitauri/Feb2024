@@ -1,4 +1,4 @@
-package VimalSingh;
+package Tree;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package VimalSingh;
+package Tree;
 
 /*
 we need to calculate the sum of every child node is equal to their node i.e parent Node.

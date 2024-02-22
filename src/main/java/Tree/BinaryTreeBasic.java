@@ -1,6 +1,4 @@
-package VimalSingh;
-
-import javax.sound.midi.Soundbank;
+package Tree;
 
 public class BinaryTreeBasic {
     public static void main(String[] args) {

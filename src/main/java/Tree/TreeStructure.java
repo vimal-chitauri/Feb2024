@@ -1,4 +1,4 @@
-package VimalSingh;
+package Tree;
 
 public class TreeStructure {
 
