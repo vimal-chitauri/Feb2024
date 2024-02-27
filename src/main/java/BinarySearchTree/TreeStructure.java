@@ -15,7 +15,7 @@ public class TreeStructure {
         //right tree structure
         node.right = new BinarySearchTreeNode(30);
         node.right.right= new BinarySearchTreeNode(40);
-        node.right.right.left= new BinarySearchTreeNode(40);
+        node.right.right.left= new BinarySearchTreeNode(35);
         node.right.right.right= new BinarySearchTreeNode(50);
         node.right.right.right.right= new BinarySearchTreeNode(80);
         return node;
@@ -33,6 +33,14 @@ public class TreeStructure {
         return node;
     }
 
+    public static void inorderTraversal (BinarySearchTreeNode root){
+
+        if(root!=null){
+            inorderTraversal(root.left);
+            System.out.println(root.key);
+            inorderTraversal(root.right);
+        }
+    }
 
 
 }

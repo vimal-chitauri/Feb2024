@@ -25,7 +25,7 @@ public class BinaryTreeBasicOperation {
          */
         int elementInserted = 10;
         BinarySearchTreeNode node=insertInBinarySearchTree(bst, elementInserted);
-       // printBinarySearchTree(node);
+        inorderTraversal(bst);
 
     }
 
@@ -91,6 +91,15 @@ public class BinaryTreeBasicOperation {
                 root = root.left;
             }
 
+        }
+    }
+
+    public static void inorderTraversal (BinarySearchTreeNode root){
+
+        if(root!=null){
+            inorderTraversal(root.left);
+            System.out.println(root.key);
+            inorderTraversal(root.right);
         }
     }
 
