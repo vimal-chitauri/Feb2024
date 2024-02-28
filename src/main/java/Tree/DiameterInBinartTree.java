@@ -14,7 +14,7 @@ public class DiameterInBinartTree {
     private static int diameterInBinaryTree(BinaryNode node) {
 
         if (node == null) return 0;
-        int root= 1+BinaryTreeBasic.getHeight(node.left)+BinaryTreeBasic.getHeight(node.left);
+        int root= 1+ RecursiveTraversalOperation.getHeight(node.left)+ RecursiveTraversalOperation.getHeight(node.left);
         int lh = diameterInBinaryTree(node.left);
         int rh = diameterInBinaryTree(node.right);
 

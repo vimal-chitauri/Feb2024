@@ -2,7 +2,7 @@ package Tree;
 
 import java.util.Stack;
 
-public class IterativeBinayTreeBasicOperation {
+public class IterativeTraversalOperation {
 
     public static void main(String[] args) {
         TreeStructure treeStructure = new TreeStructure();
