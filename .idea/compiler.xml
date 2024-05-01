@@ -9,8 +9,5 @@
         <module name="Feb2024" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Feb2024" target="15" />
-    </bytecodeTargetLevel>
   </component>
 </project>
